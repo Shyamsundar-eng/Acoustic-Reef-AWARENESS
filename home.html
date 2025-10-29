@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coral Reefs - An Educational Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Coral Reefs</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Introduction</a></li>
+                <li class="nav-item"><a href="#what-are-corals" class="nav-link">What Are Corals</a></li>
+                <li class="nav-item"><a href="#ecosystem" class="nav-link">The Ecosystem</a></li>
+                <li class="nav-item"><a href="#threats" class="nav-link">Challenges</a></li>
+                <li class="nav-item"><a href="#sounds" class="nav-link">Listen</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-parallax"></div>
+        
+        <!-- Animated Particles -->
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Animated Waves -->
+        <div class="wave-container">
+            <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+            <svg class="wave wave2" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
+            </svg>
+            <svg class="wave wave3" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
+            </svg>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-label animate-fade">
+                <span class="sparkle">✨</span> Educational Story <span class="sparkle">✨</span>
+            </div>
+            <h1 class="hero-title animate-fade-up">
+                <span class="gradient-text">The Hidden World</span><br>
+                <span class="gradient-text-alt">Beneath the Waves</span>
+            </h1>
+            <p class="hero-subtitle animate-fade-up-delay">An educational journey into the fascinating world of coral reefs</p>
+            
+            <!-- Quick Stats -->
+            <div class="hero-stats animate-fade-up-delay-2">
+                <div class="hero-stat-item">
+                    <div class="stat-icon">🪸</div>
+                    <div class="stat-number-hero" data-target="25">0</div>
+                    <div class="stat-text">% of Marine Life</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="stat-icon">🌊</div>
+                    <div class="stat-number-hero" data-target="500">0</div>
+                    <div class="stat-text">Million People</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-number-hero" data-target="1">0</div>
+                    <div class="stat-text">% Ocean Floor</div>
+                </div>
+            </div>
+            
+            <div class="scroll-hint animate-fade-up-delay-3">
+                <span>Scroll to explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Story -->
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-number-container">
+                <div class="story-number-bg">01</div>
+                <div class="story-number">01</div>
+            </div>
+            <h2 class="story-title scroll-reveal">
+                <span class="title-word">Understanding</span>
+                <span class="title-word">Coral</span>
+                <span class="title-word">Reefs</span>
+            </h2>
+            <p class="story-lead scroll-reveal-delay-1">Beneath the ocean's surface lies one of Earth's most extraordinary ecosystems</p>
+            
+            <!-- Progress indicator -->
+            <div class="section-progress">
+                <div class="progress-dot active"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Are Corals Section -->
+    <section id="what-are-corals" class="content-section">
+        <div class="content-container">
+            <div class="content-block scroll-reveal-delay-1">
+                <div class="text-block centered">
+                    <h3 class="content-heading">What Are Corals? 🪸</h3>
+                    <p class="content-text large">Think of corals as underwater apartment buildings, where thousands of tiny animals live together!</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="reef-gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=600&h=400&fit=crop&q=80" alt="Colorful coral reef" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=600&h=400&fit=crop&q=80" alt="Close-up of coral polyps" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&q=80" alt="Diverse coral species" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal-delay-2">
+                <div class="simple-explanation-box">
+                    <div class="explanation-icon">🤔</div>
+                    <h4 class="explanation-title">The Simple Answer</h4>
+                    <p class="explanation-text"><strong>Corals are living animals, not plants or rocks!</strong> They may look like colorful underwater plants or stones, but corals are actually tiny creatures called polyps. Imagine thousands of small soft animals, each about the size of a pencil eraser, living together like a big family.</p>
+                    <p class="explanation-text">These little animals work together to build hard skeletons made of limestone. Over hundreds of years, these skeletons grow into the beautiful coral reefs we see in the ocean—like underwater cities built by billions of tiny architects!</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="text-block">
+                    <h4 class="subheading">How Do Corals Live?</h4>
+                    <p class="content-text">Corals have a special friendship with tiny algae (microscopic plants) that live inside them. The algae use sunlight to make food, just like plants in your garden, and they share this food with the coral. In return, the coral gives the algae a safe home. This is called <strong>symbiosis</strong>—a win-win partnership!</p>
+                    <p class="content-text">These algae also give corals their beautiful colors—pink, purple, blue, yellow, and green. When corals are sick or stressed, they lose these algae and turn white. This is called <strong>coral bleaching</strong>, like losing your best friend.</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="analogy-section">
+                    <h4 class="analogy-title">🏢 Think of a Coral Reef Like a City</h4>
+                    <div class="analogy-grid">
+                        <div class="analogy-card">
+                            <div class="analogy-emoji">🏗️</div>
+                            <h5>Corals = Building Constructors</h5>
+                            <p>They build the reef structure, just like construction workers build homes and buildings</p>
+                        </div>
+                        <div class="analogy-card">
+                            <div class="analogy-emoji">👨‍👩‍👧‍👦</div>
+                            <h5>Fish & Sea Creatures = Residents</h5>
+                            <p>They live in the reef, just like families live in apartments and houses</p>
+                        </div>
+                        <div class="analogy-card">
+                            <div class="analogy-emoji">🍽️</div>
+                            <h5>Algae = Food Suppliers</h5>
+                            <p>They make food using sunlight, like farmers and grocery stores in a city</p>
+                        </div>
+                        <div class="analogy-card">
+                            <div class="analogy-emoji">🛡️</div>
+                            <h5>Reef Structure = City Walls</h5>
+                            <p>Protects coastlines from big waves and storms, like walls protect a city</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-block scroll-reveal">
+                <blockquote class="quote">
+                    <p>"Coral polyps are the architects of the sea, building structures that can be seen from space, yet each polyp is smaller than a pencil eraser."</p>
+                    <footer>— Marine Biologist, Dr. Sarah Chen</footer>
+                </blockquote>
+            </div>
+
+            <div class="content-grid scroll-reveal">
+                <div class="grid-item stagger-1">
+                    <div class="info-card" data-tilt>
+                        <div class="card-shine"></div>
+                        <div class="info-icon">🦠</div>
+                        <div class="info-number">1</div>
+                        <h4>Living Polyps</h4>
+                        <p>Thousands of tiny animals working together as a superorganism</p>
+                        <div class="card-hover-text">Learn More →</div>
+                    </div>
+                </div>
+                <div class="grid-item stagger-2">
+                    <div class="info-card" data-tilt>
+                        <div class="card-shine"></div>
+                        <div class="info-icon">🏗️</div>
+                        <div class="info-number">2</div>
+                        <h4>Calcium Skeleton</h4>
+                        <p>Each polyp secretes a hard protective limestone structure</p>
+                        <div class="card-hover-text">Learn More →</div>
+                    </div>
+                </div>
+                <div class="grid-item stagger-3">
+                    <div class="info-card" data-tilt>
+                        <div class="card-shine"></div>
+                        <div class="info-icon">🌿</div>
+                        <div class="info-number">3</div>
+                        <h4>Symbiotic Algae</h4>
+                        <p>Zooxanthellae provide color and energy through photosynthesis</p>
+                        <div class="card-hover-text">Learn More →</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="fact-box">
+                    <div class="fact-icon">💡</div>
+                    <p class="fact-text">Coral reefs cover less than 1% of the ocean floor (approximately 285,000 km²), yet they support over 25% of all marine species—earning them the nickname "rainforests of the sea." This includes more than 4,000 species of fish, 700 species of coral, and countless invertebrates.</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="educational-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon">📏</div>
+                        <h5>Growth Rate</h5>
+                        <p>Corals grow slowly, typically 0.3-2 cm per year for reef-building species. Some massive corals can live for over 400 years.</p>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">🌡️</div>
+                        <h5>Temperature Range</h5>
+                        <p>Reef-building corals thrive in water temperatures between 23-29°C (73-84°F). Beyond this range, they experience stress.</p>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">☀️</div>
+                        <h5>Light Requirements</h5>
+                        <p>Most corals need shallow, clear water (less than 50m deep) to receive sufficient sunlight for their zooxanthellae.</p>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">🧪</div>
+                        <h5>Calcium Carbonate</h5>
+                        <p>Corals extract calcium and carbonate ions from seawater to build their aragonite skeletons—the reef structure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section id="ecosystem" class="story-section">
+        <div class="story-container">
+            <div class="story-number">02</div>
+            <h2 class="story-title scroll-reveal">The Ecosystem</h2>
+            <p class="story-lead scroll-reveal-delay-1">Why coral reefs are vital to ocean life and human communities</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-block scroll-reveal">
+                <div class="text-block centered">
+                    <h3 class="content-heading">A Haven for Marine Life</h3>
+                    <p class="content-text large">Coral reefs are extraordinary biodiversity hotspots. Despite covering less than 1% of the ocean floor, they provide habitat for approximately 25% of all marine species. Scientists estimate that reefs harbor 1-8 million species, with many yet to be discovered.</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="biodiversity-showcase">
+                    <h4 class="showcase-title">Reef Biodiversity by Numbers</h4>
+                    <div class="biodiversity-stats">
+                        <div class="bio-stat">
+                            <div class="bio-number">4,000+</div>
+                            <div class="bio-label">Fish Species</div>
+                            <p class="bio-desc">From tiny gobies to large groupers</p>
+                        </div>
+                        <div class="bio-stat">
+                            <div class="bio-number">800+</div>
+                            <div class="bio-label">Coral Species</div>
+                            <p class="bio-desc">Hard and soft coral varieties</p>
+                        </div>
+                        <div class="bio-stat">
+                            <div class="bio-number">5,000+</div>
+                            <div class="bio-label">Mollusk Species</div>
+                            <p class="bio-desc">Snails, clams, and octopuses</p>
+                        </div>
+                        <div class="bio-stat">
+                            <div class="bio-number">2,000+</div>
+                            <div class="bio-label">Crustacean Species</div>
+                            <p class="bio-desc">Shrimp, crabs, and lobsters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="content-image parallax-container">
+                    <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=1200&h=700&fit=crop" alt="Diverse marine life on reef" class="parallax-image">
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="split-content">
+                    <div class="split-text">
+                        <h4 class="subheading">🐠 Ecological Services</h4>
+                        <p><strong>Nursery Grounds:</strong> Reefs serve as crucial nurseries for 25% of commercial fish species. Young fish hide in coral crevices until they mature.</p>
+                        <p><strong>Food Web Foundation:</strong> Coral polyps and reef algae form the base of complex food chains that support everything from tiny shrimp to large sharks, dolphins, and sea turtles.</p>
+                        <p><strong>Symbiotic Relationships:</strong> Reefs host thousands of symbiotic partnerships—cleaner fish removing parasites, anemones housing clownfish, and corals hosting zooxanthellae.</p>
+                    </div>
+                    <div class="split-text">
+                        <h4 class="subheading">🌊 Coastal Protection Value</h4>
+                        <p><strong>Wave Energy Reduction:</strong> Reefs absorb 70-90% of wave energy before it reaches shore, reducing coastal flooding and erosion by up to 84%.</p>
+                        <p><strong>Storm Protection:</strong> Healthy reefs prevent $94 million in flood damages annually in the U.S. alone. They protect over 200 million people globally from storms.</p>
+                        <p><strong>Economic Savings:</strong> Reef protection prevents an estimated $4-6 billion in global economic losses from coastal damage each year.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-block scroll-reveal">
+                <div class="stat-item stagger-1">
+                    <div class="stat-circle">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#E2E8F0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring-circle-fill" stroke="url(#gradient1)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="stat-number" data-percentage="85">500M+</div>
+                    </div>
+                    <div class="stat-label">People depend on reefs for food and income</div>
+                </div>
+                <div class="stat-item stagger-2">
+                    <div class="stat-circle">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#E2E8F0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring-circle-fill" stroke="url(#gradient2)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#14B8A6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="stat-number" data-percentage="92">$375B</div>
+                    </div>
+                    <div class="stat-label">Annual economic value from reefs worldwide</div>
+                </div>
+                <div class="stat-item stagger-3">
+                    <div class="stat-circle">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring-circle" stroke="#E2E8F0" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <circle class="progress-ring-circle-fill" stroke="url(#gradient3)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                            <defs>
+                                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0EA5E9;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="stat-number" data-percentage="75">25%</div>
+                    </div>
+                    <div class="stat-label">Of marine species rely on coral reefs</div>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="human-impact-section">
+                    <h3 class="impact-main-title">🌍 How Coral Reefs Affect YOUR Life</h3>
+                    <p class="impact-intro">You might think coral reefs are far away and don't matter to you. But they actually affect your daily life in amazing ways!</p>
+                    
+                    <div class="impact-cards">
+                        <div class="impact-card">
+                            <div class="impact-icon">🍽️</div>
+                            <h4 class="impact-title">Food on Your Plate</h4>
+                            <p class="impact-description"><strong>Over 1 billion people</strong> depend on coral reefs for their main source of protein. That's more than all of America, Canada, and Mexico combined!</p>
+                            <div class="impact-stat-box">
+                                <span class="impact-number">6 million tons</span>
+                                <span class="impact-label">of fish from reefs each year</span>
+                            </div>
+                            <p class="impact-detail">Many popular fish like grouper, snapper, and tuna depend on coral reefs during their life. No reefs = no fish = no seafood for dinner!</p>
+                        </div>
+
+                        <div class="impact-card">
+                            <div class="impact-icon">🏠</div>
+                            <h4 class="impact-title">Protection for Homes</h4>
+                            <p class="impact-description"><strong>Over 200 million people</strong> live in coastal areas protected by coral reefs. Think of reefs as giant wave-breakers!</p>
+                            <div class="impact-stat-box">
+                                <span class="impact-number">97%</span>
+                                <span class="impact-label">of wave energy absorbed by reefs</span>
+                            </div>
+                            <p class="impact-detail">Without coral reefs, huge ocean waves would destroy coastal cities, flooding homes and causing billions in damage. Reefs save lives during hurricanes and storms!</p>
+                        </div>
+
+                        <div class="impact-card">
+                            <div class="impact-icon">💊</div>
+                            <h4 class="impact-title">Medicine & Health</h4>
+                            <p class="impact-description">Coral reefs are like underwater pharmacies, providing ingredients for life-saving medicines!</p>
+                            <div class="impact-stat-box">
+                                <span class="impact-number">20+</span>
+                                <span class="impact-label">medicines from reef organisms</span>
+                            </div>
+                            <p class="impact-detail">Treatments for cancer, HIV/AIDS, heart disease, arthritis, and bacterial infections come from coral reef organisms. Future cures might be hiding in reefs right now!</p>
+                        </div>
+
+                        <div class="impact-card">
+                            <div class="impact-icon">💼</div>
+                            <h4 class="impact-title">Jobs & Income</h4>
+                            <p class="impact-description"><strong>Millions of jobs</strong> depend on healthy coral reefs—from fishermen to tour guides to hotel workers.</p>
+                            <div class="impact-stat-box">
+                                <span class="impact-number">$375 billion</span>
+                                <span class="impact-label">annual economic value</span>
+                            </div>
+                            <p class="impact-detail">Tourism to coral reefs brings money to local communities. People travel thousands of miles just to see these beautiful underwater wonders!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="economic-breakdown">
+                    <h4 class="economic-title">Annual Economic Value Breakdown</h4>
+                    <div class="economic-grid">
+                        <div class="economic-card">
+                            <div class="economic-icon">🏖️</div>
+                            <div class="economic-number">$36B</div>
+                            <div class="economic-label">Tourism & Recreation</div>
+                            <div class="economic-detail">Diving, snorkeling, resort activities</div>
+                        </div>
+                        <div class="economic-card">
+                            <div class="economic-icon">🎣</div>
+                            <div class="economic-number">$6.8B</div>
+                            <div class="economic-label">Commercial Fisheries</div>
+                            <div class="economic-detail">6 million tons of fish annually</div>
+                        </div>
+                        <div class="economic-card">
+                            <div class="economic-icon">🛡️</div>
+                            <div class="economic-number">$9B</div>
+                            <div class="economic-label">Coastal Protection</div>
+                            <div class="economic-detail">Preventing flood and storm damage</div>
+                        </div>
+                        <div class="economic-card">
+                            <div class="economic-icon">💊</div>
+                            <div class="economic-number">$5.7B</div>
+                            <div class="economic-label">Pharmaceutical Value</div>
+                            <div class="economic-detail">Biomedical compounds & research</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Threats Section -->
+    <section id="threats" class="story-section">
+        <div class="story-container">
+            <div class="story-number">03</div>
+            <h2 class="story-title scroll-reveal">The Challenges</h2>
+            <p class="story-lead scroll-reveal-delay-1">Understanding the threats facing coral reefs today</p>
+        </div>
+    </section>
+
+    <section class="content-section dark-section">
+        <div class="content-container">
+            <div class="content-block scroll-reveal">
+                <div class="text-block centered">
+                    <p class="content-text large">Imagine your neighborhood being destroyed little by little every day. That's what's happening to coral reefs right now.</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="earth-impact-box">
+                    <h3 class="earth-impact-title">🌎 Effects on Planet Earth</h3>
+                    <p class="earth-impact-intro">When coral reefs die, it's not just bad for fish—it affects the entire planet, including the air we breathe!</p>
+                    
+                    <div class="earth-effects-grid">
+                        <div class="earth-effect-item">
+                            <div class="effect-emoji">💨</div>
+                            <h4>Less Oxygen, More CO₂</h4>
+                            <p>Coral reefs help produce oxygen and absorb carbon dioxide (the gas causing global warming). When reefs die, there's less oxygen for us to breathe and more CO₂ heating up the planet.</p>
+                        </div>
+                        <div class="earth-effect-item">
+                            <div class="effect-emoji">🌊</div>
+                            <h4>Rising Sea Levels</h4>
+                            <p>Dead reefs can't protect coasts, so more land gets flooded. Islands and coastal cities slowly disappear underwater as sea levels rise.</p>
+                        </div>
+                        <div class="earth-effect-item">
+                            <div class="effect-emoji">🦈</div>
+                            <h4>Mass Extinction</h4>
+                            <p>If coral reefs disappear, 25% of all ocean animals lose their homes. That's like destroying entire cities and leaving millions homeless!</p>
+                        </div>
+                        <div class="earth-effect-item">
+                            <div class="effect-emoji">⚖️</div>
+                            <h4>Ecosystem Imbalance</h4>
+                            <p>Reefs keep ocean ecosystems balanced. Without them, the ocean food chain collapses, affecting all marine life from tiny plankton to huge whales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="monitoring-callout">
+                    <div class="callout-icon">📊</div>
+                    <div class="callout-content">
+                        <h4 class="callout-title">The Challenge of Monitoring at Scale</h4>
+                        <p class="callout-text">Beyond these direct threats, effectively tracking reef health across thousands of locations worldwide remains a critical challenge. Traditional monitoring methods—deploying divers for visual surveys—are time-consuming, expensive, and impossible to scale globally. By the time degradation is documented through conventional means, irreversible damage may have already occurred. <strong>Innovative solutions like acoustic monitoring</strong> offer a transformative approach: rapid, scalable, and cost-effective assessment that provides the real-time data conservationists need to act swiftly and strategically.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="threat-container scroll-reveal">
+                <div class="threat-item stagger-1">
+                    <div class="threat-number">01</div>
+                    <div class="threat-content-block">
+                        <h3 class="threat-title">🌡️ Climate Change & Ocean Warming</h3>
+                        <p class="threat-text"><strong>What's Happening:</strong> The Earth is getting warmer because of pollution from cars, factories, and burning fossil fuels. This makes ocean water hotter too.</p>
+                        <p class="threat-text"><strong>Coral Bleaching Explained Simply:</strong> When water gets too warm, corals kick out their algae friends (remember the partnership we talked about?). Without these algae, corals turn white (bleached) and starve. It's like if you lost your job and couldn't buy food—you'd be in serious trouble!</p>
+                        <p class="threat-text"><strong>How Bad Is It:</strong> 50 years ago, coral bleaching was rare. Now it happens every 6 years! In 2016, one heat wave killed 30% of the Great Barrier Reef—that's like an entire city disappearing.</p>
+                        <p class="threat-text"><strong>Ocean Acidification:</strong> Oceans absorb carbon dioxide from pollution, making seawater more acidic (like adding vinegar to water). This makes it hard for corals to build their skeletons, like trying to build a house with weak bricks.</p>
+                        <div class="threat-stat">50% of reefs lost since 1980</div>
+                    </div>
+                    <div class="threat-image-container">
+                        <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&h=600&fit=crop&q=80" alt="Bleached coral reef" class="threat-img">
+                    </div>
+                </div>
+
+                <div class="threat-item stagger-2">
+                    <div class="threat-number">02</div>
+                    <div class="threat-content-block">
+                        <h3 class="threat-title">🏭 Pollution & Trash</h3>
+                        <p class="threat-text"><strong>What's Happening:</strong> Trash, chemicals, and dirty water from cities and farms flow into the ocean, making it toxic for coral reefs.</p>
+                        <p class="threat-text"><strong>Fertilizer Pollution:</strong> When farmers use too much fertilizer, rain washes it into rivers and then the ocean. This makes bad algae grow everywhere, covering corals like a thick blanket and blocking their sunlight. Corals suffocate and die.</p>
+                        <p class="threat-text"><strong>Plastic Nightmare:</strong> Over 11 billion plastic bottles, bags, and trash are stuck on coral reefs. Imagine your home filled with garbage—you'd get sick, right? Same with corals! Plastic increases coral diseases by 89%.</p>
+                        <p class="threat-text"><strong>Chemical Poisoning:</strong> Even your sunscreen can harm corals! Chemicals in common sunscreens (like oxybenzone) poison coral babies and cause bleaching. 14,000 tons of sunscreen wash into reefs every year—that's like 140 blue whales of chemicals!</p>
+                        <div class="threat-stat">80% of pollution originates on land</div>
+                    </div>
+                    <div class="threat-image-container">
+                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&h=600&fit=crop" alt="Ocean pollution" class="threat-img">
+                    </div>
+                </div>
+
+                <div class="threat-item stagger-3">
+                    <div class="threat-number">03</div>
+                    <div class="threat-content-block">
+                        <h3 class="threat-title">🐟 Overfishing & Destructive Practices</h3>
+                        <p class="threat-text"><strong>What's Happening:</strong> People are catching too many fish and using dangerous methods that destroy coral reefs in the process.</p>
+                        <p class="threat-text"><strong>Taking Too Many Fish:</strong> When we catch all the herbivore fish (fish that eat algae, like parrotfish), there's nobody left to control the algae. Bad algae grows everywhere and smothers the corals. It's like if all the gardeners in your city disappeared—weeds would take over everything!</p>
+                        <p class="threat-text"><strong>Bomb Fishing:</strong> Some fishermen use explosives (bombs) underwater to stun fish and collect them easily. But each explosion destroys coral reefs that took 500+ years to grow. Imagine someone demolishing your great-great-great-grandparent's house just to catch a few fish!</p>
+                        <p class="threat-text"><strong>Poison Fishing:</strong> To catch colorful fish for aquariums, some people spray cyanide poison. This kills corals and other sea life. It's like spraying poison in a neighborhood to catch one person—everyone else gets hurt too.</p>
+                        <div class="threat-stat">55% of reefs threatened by fishing</div>
+                    </div>
+                    <div class="threat-image-container">
+                        <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&h=600&fit=crop" alt="Overfishing impact" class="threat-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-block scroll-reveal">
+                <blockquote class="quote light">
+                    <p>"We are the first generation to know we are destroying the world, and we could be the last that can do anything about it."</p>
+                    <footer>— Marine Conservation Biologist</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sounds Section -->
+    <section id="sounds" class="story-section">
+        <div class="story-container">
+            <div class="story-number">04</div>
+            <h2 class="story-title scroll-reveal">AI-Powered Acoustic Monitoring</h2>
+            <p class="story-lead scroll-reveal-delay-1">Using artificial intelligence to diagnose reef health through sound</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-block scroll-reveal">
+                <div class="text-block centered">
+                    <h3 class="content-heading">🎵 Listening to Reef Health with AI</h3>
+                    <p class="content-text large">Did you know coral reefs make sounds? And scientists can now use these sounds to check if a reef is healthy or sick!</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="simple-explanation-box">
+                    <div class="explanation-icon">🔊</div>
+                    <h4 class="explanation-title">How Does Sound Tell Us About Reef Health?</h4>
+                    <p class="explanation-text"><strong>Healthy reefs are LOUD!</strong> When a reef is thriving, it's like a busy city—full of sounds from snapping shrimp (they sound like crackling popcorn!), fish grunting and clicking, sea urchins scraping rocks, and crabs walking around. It's a beautiful underwater symphony!</p>
+                    <p class="explanation-text"><strong>Sick reefs are QUIET.</strong> When a reef is dying, most animals leave or die. The reef becomes eerily silent—like a ghost town. By listening to these sounds, scientists can tell if a reef needs help.</p>
+                    <p class="explanation-text"><strong>AI (Artificial Intelligence) is the super-listener!</strong> Imagine having to listen to thousands of hours of underwater recordings—it would take forever! But AI can do it in seconds. We teach computers to recognize healthy vs. unhealthy reef sounds, just like you can tell if a baby is happy or crying. The AI can even detect bad sounds like boat engines or explosions from blast fishing.</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="text-block centered">
+                    <p class="content-text large">🎧 <strong>Listen for yourself!</strong> Below are actual recordings from real coral reefs. Can YOU hear the difference between healthy and degraded reefs?</p>
+                </div>
+            </div>
+
+            <div class="audio-container scroll-reveal">
+                <div class="audio-item stagger-1">
+                    <div class="audio-visual">
+                        <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&h=500&fit=crop" alt="Healthy coral reef">
+                        <div class="audio-overlay">
+                            <button class="audio-play-btn" data-audio="audio1">
+                                <span class="play-icon"></span>
+                                <span class="ripple"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-description">
+                        <div class="audio-label">Healthy Reef</div>
+                        <h4 class="audio-title">Thriving Ecosystem Detected</h4>
+                        <p class="audio-text">The crackling of snapping shrimp, fish grunts, and diverse biological sounds create a rich acoustic signature characteristic of healthy reefs.</p>
+                        <audio id="audio1" class="audio-element">
+                            <source src="Healthy.wav" type="audio/wav">
+                        </audio>
+                        
+                        <!-- AI Dashboard Mockup -->
+                        <div class="ai-dashboard">
+                            <div class="dashboard-header">
+                                <span class="dashboard-icon">🤖</span>
+                                <span class="dashboard-title">Acoustic Reef Analysis</span>
+                            </div>
+                            <div class="dashboard-status healthy">
+                                <div class="status-indicator">
+                                    <span class="status-icon">✅</span>
+                                    <span class="status-text">Healthy Reef</span>
+                                </div>
+                                <div class="status-confidence">Confidence: 94%</div>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric">
+                                    <div class="metric-label">Biophony Score</div>
+                                    <div class="metric-value high">8.7/10</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Species Richness</div>
+                                    <div class="metric-value high">High</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio-note">🎧 Click play button above to hear actual reef sounds</div>
+                    </div>
+                </div>
+
+                <div class="audio-item stagger-2">
+                    <div class="audio-visual">
+                        <img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&h=500&fit=crop" alt="Degraded reef">
+                        <div class="audio-overlay">
+                            <button class="audio-play-btn" data-audio="audio2">
+                                <span class="play-icon"></span>
+                                <span class="ripple"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-description">
+                        <div class="audio-label">Degraded Reef</div>
+                        <h4 class="audio-title">Ecosystem Decline Identified</h4>
+                        <p class="audio-text">Reduced biological activity and sparse acoustic signals indicate a degraded ecosystem with low biodiversity and compromised health.</p>
+                        <audio id="audio2" class="audio-element">
+                            <source src="degraded.wav" type="audio/wav">
+                        </audio>
+                        
+                        <!-- AI Dashboard Mockup -->
+                        <div class="ai-dashboard">
+                            <div class="dashboard-header">
+                                <span class="dashboard-icon">🤖</span>
+                                <span class="dashboard-title">Acoustic Reef Analysis</span>
+                            </div>
+                            <div class="dashboard-status degraded">
+                                <div class="status-indicator">
+                                    <span class="status-icon">❌</span>
+                                    <span class="status-text">Degraded Reef</span>
+                                </div>
+                                <div class="status-confidence">Confidence: 91%</div>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric">
+                                    <div class="metric-label">Biophony Score</div>
+                                    <div class="metric-value low">2.3/10</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Species Richness</div>
+                                    <div class="metric-value low">Low</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio-note">Sample audio - replace with degraded reef recording</div>
+                    </div>
+                </div>
+
+                <div class="audio-item stagger-3">
+                    <div class="audio-visual">
+                        <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&h=500&fit=crop" alt="Boat and ocean noise">
+                        <div class="audio-overlay">
+                            <button class="audio-play-btn" data-audio="audio3">
+                                <span class="play-icon"></span>
+                                <span class="ripple"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="audio-description">
+                        <div class="audio-label">Threat Detection</div>
+                        <h4 class="audio-title">Detecting Threats with AI</h4>
+                        <p class="audio-text">AI can identify harmful anthropogenic sounds like boat noise, blast fishing, or dredging—enabling rapid intervention to protect vulnerable reefs.</p>
+                        <audio id="audio3" class="audio-element">
+                            <source src="https://www.soundjay.com/nature/sounds/ocean-wave-2.mp3" type="audio/mpeg">
+                        </audio>
+                        
+                        <!-- AI Dashboard Mockup -->
+                        <div class="ai-dashboard">
+                            <div class="dashboard-header">
+                                <span class="dashboard-icon">🤖</span>
+                                <span class="dashboard-title">Acoustic Reef Analysis</span>
+                            </div>
+                            <div class="dashboard-status warning">
+                                <div class="status-indicator">
+                                    <span class="status-icon">⚠️</span>
+                                    <span class="status-text">Threat Detected</span>
+                                </div>
+                                <div class="status-confidence">Confidence: 96%</div>
+                            </div>
+                            <div class="dashboard-metrics">
+                                <div class="metric">
+                                    <div class="metric-label">Noise Pollution</div>
+                                    <div class="metric-value alert">HIGH 🚤</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Blast Fishing Risk</div>
+                                    <div class="metric-value alert">DETECTED 💥</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="audio-note">Sample audio - replace with boat noise recording</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Button -->
+            <div class="cta-container scroll-reveal">
+                <a href="#streamlit-app-link" class="cta-button">
+                    <span class="cta-text">Try the Acoustic Reef Analyser</span>
+                    <span class="cta-arrow">→</span>
+                </a>
+                <p class="cta-subtitle">Upload your own reef recordings and get instant AI-powered health analysis</p>
+            </div>
+
+            <div class="quote-block scroll-reveal">
+                <blockquote class="quote">
+                    <p>"With AI-powered acoustic analysis, we can now monitor thousands of reefs simultaneously, detecting threats and tracking recovery in real-time—something that would be impossible with traditional methods."</p>
+                    <footer>— Dr. Steve Simpson, Marine Bioacoustics Pioneer</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-block scroll-reveal">
+                <div class="text-block centered">
+                    <h3 class="content-heading">Learning to Protect</h3>
+                    <p class="content-text large">Understanding coral reefs is the first step toward their conservation. Education empowers us to make informed decisions and take meaningful action.</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="fact-box">
+                    <p class="fact-text">Every small action matters—from reducing carbon emissions to supporting sustainable seafood choices, we all have a role to play in protecting these vital ecosystems.</p>
+                </div>
+            </div>
+
+            <div class="content-block scroll-reveal">
+                <div class="text-block centered">
+                    <h4 class="subheading" style="margin-bottom: 1rem;">Technology as a Source of Hope</h4>
+                    <p class="content-text">While the challenges are daunting, innovative technology offers unprecedented opportunities for conservation. Tools like <strong>Acoustic Reef</strong>—our AI-driven acoustic monitoring system—exemplify how artificial intelligence can empower researchers and conservationists worldwide. By providing rapid, accurate reef health assessments at scale, these technologies help focus limited conservation resources where they're needed most, enabling data-driven decisions and faster responses to emerging threats.</p>
+                    <p class="content-text">The future of coral reef conservation lies in combining scientific understanding, community action, and cutting-edge technology. Together, these elements create a powerful force for positive change.</p>
+                </div>
+            </div>
+
+            <div class="conclusion-cta scroll-reveal">
+                <p class="cta-intro-text">Be part of the solution. Contribute to reef monitoring efforts with AI-powered analysis.</p>
+                <a href="#streamlit-app-link" class="secondary-cta-link">
+                    <span class="link-icon">🎵</span>
+                    <span class="link-text">Analyze Reef Sounds with Acoustic Reef</span>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content scroll-reveal">
+                <div class="footer-section">
+                    <h4 class="footer-heading">Coral Reefs</h4>
+                    <p class="footer-text">An educational resource dedicated to understanding and appreciating coral reef ecosystems.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Learn More</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Introduction</a></li>
+                        <li><a href="#what-are-corals">What Are Corals</a></li>
+                        <li><a href="#ecosystem">The Ecosystem</a></li>
+                        <li><a href="#threats">Challenges</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Scientific Articles</a></li>
+                        <li><a href="#">Educational Materials</a></li>
+                        <li><a href="#">Conservation Groups</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coral Reefs Educational Project. For educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 15V5M10 5L5 10M10 5L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

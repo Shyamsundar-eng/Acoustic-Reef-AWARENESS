@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Technology - Acoustic Reef</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;"><span class="logo-text">Acoustic Reef</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="science.html" class="nav-link">The Science</a></li>
+                <li class="nav-item"><a href="technology.html" class="nav-link active">The Technology</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#streamlit-app-link" class="nav-link nav-cta-btn">Try the App</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=800&fit=crop&q=80');"></div>
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">Our Technology</h1>
+            <p class="page-hero-subtitle">AI-powered acoustic analysis for instant reef diagnostics</p>
+        </div>
+    </section>
+
+    <!-- SurfPerch Foundation -->
+    <section class="rp-section" style="background: white;">
+        <div class="rp-container">
+            <div class="rp-section-content">
+                <div class="rp-text-side">
+                    <h2 class="rp-section-title">Built on SurfPerch</h2>
+                    <p class="rp-section-description"><strong>Acoustic Reef is powered by SurfPerch</strong>, a state-of-the-art deep learning model developed by Google Research for marine bioacoustics.</p>
+                    <p class="rp-section-description">SurfPerch uses a convolutional neural network architecture to learn acoustic representations from millions of underwater recordings. It transforms raw audio into rich embeddings that capture:</p>
+                    <ul class="rp-feature-list">
+                        <li>Spectral patterns of fish vocalizations</li>
+                        <li>Temporal dynamics of biological choruses</li>
+                        <li>Acoustic signatures of invertebrate activity</li>
+                        <li>Environmental noise characteristics</li>
+                    </ul>
+                    <p class="rp-section-description">We fine-tuned SurfPerch on a curated dataset of healthy and degraded reef recordings, achieving <strong>95% classification accuracy</strong>—a significant improvement over traditional acoustic indices.</p>
+                </div>
+                <div class="rp-image-side">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop&q=80" alt="AI Neural Network" class="rp-section-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="rp-section" style="background: #F8FAFB;">
+        <div class="rp-container">
+            <h2 class="rp-section-title centered">How Acoustic Reef Works</h2>
+            <p class="rp-section-subtitle">From audio file to actionable insights in under 5 seconds</p>
+            
+            <div class="tech-pipeline">
+                <div class="tech-pipeline-step scroll-reveal">
+                    <div class="tech-step-header">
+                        <div class="tech-step-number">01</div>
+                        <h3 class="tech-step-title">Audio Upload</h3>
+                    </div>
+                    <p class="tech-step-description">Users upload a WAV or MP3 file via our Streamlit web interface. We accept recordings of any duration, though 30-60 seconds is optimal.</p>
+                    <div class="tech-step-specs">
+                        <span class="tech-spec">Formats: WAV, MP3, FLAC</span>
+                        <span class="tech-spec">Duration: 10s - 5min</span>
+                        <span class="tech-spec">Sample Rate: Any</span>
+                    </div>
+                </div>
+
+                <div class="tech-pipeline-arrow">↓</div>
+
+                <div class="tech-pipeline-step scroll-reveal">
+                    <div class="tech-step-header">
+                        <div class="tech-step-number">02</div>
+                        <h3 class="tech-step-title">Audio Preprocessing</h3>
+                    </div>
+                    <p class="tech-step-description">The audio is resampled to 32kHz and converted to a mel-spectrogram—a time-frequency representation that highlights biologically relevant acoustic features.</p>
+                    <div class="tech-step-specs">
+                        <span class="tech-spec">Resample: 32kHz</span>
+                        <span class="tech-spec">Window: 1024 samples</span>
+                        <span class="tech-spec">Mel bins: 128</span>
+                    </div>
+                </div>
+
+                <div class="tech-pipeline-arrow">↓</div>
+
+                <div class="tech-pipeline-step scroll-reveal">
+                    <div class="tech-step-header">
+                        <div class="tech-step-number">03</div>
+                        <h3 class="tech-step-title">SurfPerch Embedding</h3>
+                    </div>
+                    <p class="tech-step-description">The spectrogram passes through SurfPerch's convolutional layers, producing a 1024-dimensional embedding vector that encodes the acoustic signature.</p>
+                    <div class="tech-step-specs">
+                        <span class="tech-spec">Model: SurfPerch CNN</span>
+                        <span class="tech-spec">Embedding: 1024-dim</span>
+                        <span class="tech-spec">Time: ~2 seconds</span>
+                    </div>
+                </div>
+
+                <div class="tech-pipeline-arrow">↓</div>
+
+                <div class="tech-pipeline-step scroll-reveal">
+                    <div class="tech-step-header">
+                        <div class="tech-step-number">04</div>
+                        <h3 class="tech-step-title">Classification & Scoring</h3>
+                    </div>
+                    <p class="tech-step-description">A trained Random Forest classifier processes the embedding to predict reef health (Healthy/Degraded) and compute a biophony score (0-10).</p>
+                    <div class="tech-step-specs">
+                        <span class="tech-spec">Classifier: Random Forest</span>
+                        <span class="tech-spec">Accuracy: 95%</span>
+                        <span class="tech-spec">Confidence: Provided</span>
+                    </div>
+                </div>
+
+                <div class="tech-pipeline-arrow">↓</div>
+
+                <div class="tech-pipeline-step scroll-reveal">
+                    <div class="tech-step-header">
+                        <div class="tech-step-number">05</div>
+                        <h3 class="tech-step-title">UMAP Visualization</h3>
+                    </div>
+                    <p class="tech-step-description">Your recording is projected into a 2D UMAP space alongside global reef recordings, revealing acoustic similarity to healthy and degraded ecosystems worldwide.</p>
+                    <div class="tech-step-specs">
+                        <span class="tech-spec">Method: UMAP</span>
+                        <span class="tech-spec">Neighbors: 15</span>
+                        <span class="tech-spec">Min dist: 0.1</span>
+                    </div>
+                </div>
+
+                <div class="tech-pipeline-arrow">↓</div>
+
+                <div class="tech-pipeline-step scroll-reveal">
+                    <div class="tech-step-header">
+                        <div class="tech-step-number">06</div>
+                        <h3 class="tech-step-title">Results Dashboard</h3>
+                    </div>
+                    <p class="tech-step-description">All results are displayed in an interactive dashboard: health classification, confidence score, biophony level, spectrogram, and UMAP plot.</p>
+                    <div class="tech-step-specs">
+                        <span class="tech-spec">Delivery: Instant</span>
+                        <span class="tech-spec">Format: Interactive</span>
+                        <span class="tech-spec">Export: Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="rp-section" style="background: white;">
+        <div class="rp-container">
+            <h2 class="rp-section-title centered">Technical Specifications</h2>
+            
+            <div class="tech-specs-grid">
+                <div class="tech-spec-card scroll-reveal">
+                    <div class="tech-spec-icon">🧠</div>
+                    <h3 class="tech-spec-title">AI Model</h3>
+                    <ul class="tech-spec-list">
+                        <li><strong>Base Model:</strong> SurfPerch (Google Research)</li>
+                        <li><strong>Architecture:</strong> Convolutional Neural Network</li>
+                        <li><strong>Embedding Size:</strong> 1024 dimensions</li>
+                        <li><strong>Classifier:</strong> Random Forest (500 trees)</li>
+                        <li><strong>Training Data:</strong> 1,000+ labeled reef recordings</li>
+                        <li><strong>Validation Accuracy:</strong> 95%</li>
+                    </ul>
+                </div>
+
+                <div class="tech-spec-card scroll-reveal">
+                    <div class="tech-spec-icon">📊</div>
+                    <h3 class="tech-spec-title">Data Processing</h3>
+                    <ul class="tech-spec-list">
+                        <li><strong>Framework:</strong> Python 3.10+</li>
+                        <li><strong>Audio Library:</strong> Librosa</li>
+                        <li><strong>ML Framework:</strong> TensorFlow 2.x</li>
+                        <li><strong>Dimensionality Reduction:</strong> UMAP</li>
+                        <li><strong>Visualization:</strong> Plotly, Matplotlib</li>
+                        <li><strong>Web Interface:</strong> Streamlit</li>
+                    </ul>
+                </div>
+
+                <div class="tech-spec-card scroll-reveal">
+                    <div class="tech-spec-icon">⚡</div>
+                    <h3 class="tech-spec-title">Performance</h3>
+                    <ul class="tech-spec-list">
+                        <li><strong>Analysis Time:</strong> < 5 seconds</li>
+                        <li><strong>Max File Size:</strong> 50 MB</li>
+                        <li><strong>Concurrent Users:</strong> Scalable</li>
+                        <li><strong>Availability:</strong> 99.9% uptime</li>
+                        <li><strong>API Latency:</strong> < 500ms</li>
+                        <li><strong>Storage:</strong> Cloud-based (secure)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation & Impact -->
+    <section class="rp-section" style="background: #F8FAFB;">
+        <div class="rp-container">
+            <div class="rp-section-content rp-reverse">
+                <div class="rp-image-side">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop&q=80" alt="Innovation in marine science" class="rp-section-image">
+                </div>
+                <div class="rp-text-side">
+                    <h2 class="rp-section-title">Innovation & Impact</h2>
+                    <p class="rp-section-description"><strong>Acoustic Reef democratizes marine conservation.</strong> By making reef health assessment instant, free, and accessible to anyone with a hydrophone, we're removing barriers that have historically limited monitoring to well-funded institutions.</p>
+                    <p class="rp-section-description">Our key innovations include:</p>
+                    <ul class="rp-feature-list">
+                        <li><strong>Speed:</strong> Analysis in seconds vs. weeks of manual processing</li>
+                        <li><strong>Accessibility:</strong> Free web app vs. expensive specialized software</li>
+                        <li><strong>Simplicity:</strong> No marine biology expertise required</li>
+                        <li><strong>Scalability:</strong> Can process thousands of recordings simultaneously</li>
+                        <li><strong>Global Context:</strong> UMAP comparison to worldwide reef acoustics</li>
+                    </ul>
+                    <p class="rp-section-description">We're empowering coastal communities, citizen scientists, and under-resourced conservation organizations to monitor their reefs with the same tools available to major research institutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Roadmap -->
+    <section class="rp-section" style="background: white; padding: 5rem 2rem;">
+        <div class="rp-container">
+            <h2 class="rp-section-title centered">Future Roadmap</h2>
+            <p class="rp-section-subtitle">Expanding capabilities and reach</p>
+            
+            <div class="roadmap-grid">
+                <div class="roadmap-card scroll-reveal">
+                    <div class="roadmap-phase">Phase 1 - Current</div>
+                    <h3 class="roadmap-title">Core Platform</h3>
+                    <ul class="roadmap-features">
+                        <li>✅ Healthy/Degraded classification</li>
+                        <li>✅ Biophony scoring</li>
+                        <li>✅ UMAP visualization</li>
+                        <li>✅ Web-based analyzer</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-card scroll-reveal">
+                    <div class="roadmap-phase">Phase 2 - Q2 2025</div>
+                    <h3 class="roadmap-title">Enhanced Detection</h3>
+                    <ul class="roadmap-features">
+                        <li>🔄 Species-specific identification</li>
+                        <li>🔄 Threat detection (blast fishing, dredging)</li>
+                        <li>🔄 Temporal trend analysis</li>
+                        <li>🔄 Mobile app (iOS/Android)</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-card scroll-reveal">
+                    <div class="roadmap-phase">Phase 3 - Q4 2025</div>
+                    <h3 class="roadmap-title">Global Network</h3>
+                    <ul class="roadmap-features">
+                        <li>📅 Community data sharing platform</li>
+                        <li>📅 Real-time monitoring dashboard</li>
+                        <li>📅 Biodiversity forecasting models</li>
+                        <li>📅 Integration with conservation databases</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="rp-section rp-cta-section">
+        <div class="rp-cta-container">
+            <h2 class="rp-cta-title">Try the Technology</h2>
+            <p class="rp-cta-description">Experience SurfPerch-powered reef analysis firsthand. Upload your recording and get instant results.</p>
+            <a href="#streamlit-app-link" class="rp-cta-button">
+                <span class="rp-cta-icon">🎵</span>
+                <span>Launch Acoustic Reef Analyzer</span>
+                <span class="rp-cta-arrow">→</span>
+            </a>
+            <p class="rp-cta-note">No installation • No sign-up • Completely free</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="rp-footer">
+        <div class="rp-footer-container">
+            <div class="rp-footer-grid">
+                <div class="rp-footer-col">
+                    <h3 class="rp-footer-title">Acoustic Reef</h3>
+                    <p class="rp-footer-description">Blue Guardians Team<br>
+                    PCCOE Innovation & Grand Challenge<br>
+                    Pimpri Chinchwad, India</p>
+                </div>
+
+                <div class="rp-footer-col">
+                    <h4 class="rp-footer-heading">Useful Links</h4>
+                    <ul class="rp-footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="science.html">The Science</a></li>
+                        <li><a href="technology.html">The Technology</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#streamlit-app-link">Try the App</a></li>
+                    </ul>
+                </div>
+
+                <div class="rp-footer-col">
+                    <h4 class="rp-footer-heading">About Acoustic Reef</h4>
+                    <p class="rp-footer-text">Since 2024, Acoustic Reef has been providing AI-powered coral reef health assessment services.<br><br>
+                    Follow our journey to democratize ocean monitoring.</p>
+                </div>
+            </div>
+
+            <div class="rp-footer-bottom">
+                <p>© Copyright <strong>Acoustic Reef</strong> - All Rights Reserved - Made with ❤️ by the Blue Guardians team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

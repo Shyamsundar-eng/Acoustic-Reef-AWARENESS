@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Science - Acoustic Reef</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none;"><span class="logo-text">Acoustic Reef</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="science.html" class="nav-link active">The Science</a></li>
+                <li class="nav-item"><a href="technology.html" class="nav-link">The Technology</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="#streamlit-app-link" class="nav-link nav-cta-btn">Try the App</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=1920&h=800&fit=crop&q=80');"></div>
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">The Science Behind Acoustic Reef</h1>
+            <p class="page-hero-subtitle">Understanding coral reefs through sound and AI</p>
+        </div>
+    </section>
+
+    <!-- Why Coral Reefs Matter -->
+    <section class="rp-section" style="background: white;">
+        <div class="rp-container">
+            <div class="rp-section-content">
+                <div class="rp-text-side">
+                    <h2 class="rp-section-title">Why Coral Reefs Matter</h2>
+                    <p class="rp-section-description"><strong>Coral reefs are the rainforests of the ocean.</strong> Despite covering less than 0.1% of the ocean floor, they support 25% of all marine species. Over 500 million people depend on reefs for food, income, and coastal protection.</p>
+                    <p class="rp-section-description">Reefs generate <strong>$375 billion annually</strong> in ecosystem services including fisheries, tourism, and shoreline protection. They act as natural breakwaters, reducing wave energy by up to 97% and protecting coastal communities from storms and erosion.</p>
+                    <p class="rp-section-description">But coral reefs face an existential crisis. Rising ocean temperatures, pollution, overfishing, and ocean acidification have caused half of the world's reefs to die in the past 30 years. Without intervention, we could lose 90% of reefs by 2050.</p>
+                </div>
+                <div class="rp-image-side">
+                    <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&h=600&fit=crop&q=80" alt="Healthy coral reef ecosystem" class="rp-section-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Challenge of Monitoring -->
+    <section class="rp-section" style="background: #F8FAFB;">
+        <div class="rp-container">
+            <div class="rp-section-content rp-reverse">
+                <div class="rp-image-side">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop&q=80" alt="Diver monitoring reef" class="rp-section-image">
+                </div>
+                <div class="rp-text-side">
+                    <h2 class="rp-section-title">The Challenge of Monitoring</h2>
+                    <p class="rp-section-description">Traditional reef monitoring requires expensive dive teams, weeks of data processing, and extensive marine biology expertise. Visual surveys are:</p>
+                    <ul class="rp-feature-list">
+                        <li><strong>Time-intensive:</strong> Manual fish counts and coral assessments take hours underwater</li>
+                        <li><strong>Expensive:</strong> Dive expeditions cost thousands of dollars per site</li>
+                        <li><strong>Limited in scope:</strong> Divers can only cover small areas at shallow depths</li>
+                        <li><strong>Seasonal:</strong> Weather and water conditions restrict survey windows</li>
+                        <li><strong>Skill-dependent:</strong> Requires trained marine biologists</li>
+                    </ul>
+                    <p class="rp-section-description">This makes continuous, large-scale reef monitoring nearly impossible—especially for remote reefs and under-resourced communities that need it most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enter Bioacoustics -->
+    <section class="rp-section" style="background: white;">
+        <div class="rp-container">
+            <div class="rp-section-content">
+                <div class="rp-text-side">
+                    <h2 class="rp-section-title">Enter Bioacoustics</h2>
+                    <p class="rp-section-description"><strong>Coral reefs are remarkably noisy.</strong> Healthy reefs produce a rich soundscape—a chorus of snapping shrimp, grunting fish, and coral crackling. This biological sound, or "biophony," is a reliable indicator of reef health and biodiversity.</p>
+                    <p class="rp-section-description">Research by Dr. Steve Simpson at the University of Exeter has shown that reef soundscapes correlate strongly with ecosystem health:</p>
+                    <ul class="rp-feature-list">
+                        <li><strong>Healthy reefs</strong> are loud and diverse, with constant biological activity</li>
+                        <li><strong>Degraded reefs</strong> fall silent as species disappear</li>
+                        <li><strong>Recovering reefs</strong> gradually regain their acoustic complexity</li>
+                        <li><strong>Noise pollution</strong> from boats and construction disrupts marine life</li>
+                    </ul>
+                    <p class="rp-section-description">Acoustic monitoring offers a non-intrusive, continuous, and cost-effective alternative to visual surveys. A single hydrophone can record 24/7, capturing ecosystem dynamics across day/night cycles and seasons.</p>
+                </div>
+                <div class="rp-image-side">
+                    <img src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&h=600&fit=crop&q=80" alt="Underwater reef soundscape" class="rp-section-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Measure -->
+    <section class="rp-section" style="background: #F8FAFB; padding: 5rem 2rem;">
+        <div class="rp-container">
+            <h2 class="rp-section-title centered">What We Measure</h2>
+            <p class="rp-section-subtitle">Acoustic Reef analyzes multiple dimensions of reef soundscapes</p>
+            
+            <div class="science-metrics-grid">
+                <div class="science-metric-card scroll-reveal">
+                    <div class="science-metric-icon">📊</div>
+                    <h3 class="science-metric-title">Biophony Score</h3>
+                    <p class="science-metric-description">Quantifies biological sound activity from 0-10, indicating overall ecosystem vitality and species richness.</p>
+                </div>
+
+                <div class="science-metric-card scroll-reveal">
+                    <div class="science-metric-icon">🐠</div>
+                    <h3 class="science-metric-title">Species Activity</h3>
+                    <p class="science-metric-description">Detects presence and activity levels of fish, invertebrates, and other vocal marine organisms.</p>
+                </div>
+
+                <div class="science-metric-card scroll-reveal">
+                    <div class="science-metric-icon">🎯</div>
+                    <h3 class="science-metric-title">Reef Health Status</h3>
+                    <p class="science-metric-description">Binary classification: Healthy vs. Degraded, trained on expert-labeled recordings from global reefs.</p>
+                </div>
+
+                <div class="science-metric-card scroll-reveal">
+                    <div class="science-metric-icon">🚤</div>
+                    <h3 class="science-metric-title">Noise Pollution</h3>
+                    <p class="science-metric-description">Identifies anthropogenic noise from boats, construction, and blast fishing that disrupts marine life.</p>
+                </div>
+
+                <div class="science-metric-card scroll-reveal">
+                    <div class="science-metric-icon">📈</div>
+                    <h3 class="science-metric-title">Acoustic Complexity</h3>
+                    <p class="science-metric-description">Measures spectral diversity and temporal variability, indicating ecosystem complexity.</p>
+                </div>
+
+                <div class="science-metric-card scroll-reveal">
+                    <div class="science-metric-icon">🌍</div>
+                    <h3 class="science-metric-title">Geographic Context</h3>
+                    <p class="science-metric-description">Compares your recording to global reef soundscapes using UMAP visualization of acoustic similarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Evidence -->
+    <section class="rp-section" style="background: white;">
+        <div class="rp-container">
+            <h2 class="rp-section-title centered">The Scientific Evidence</h2>
+            <p class="rp-section-subtitle">Acoustic monitoring is backed by decades of peer-reviewed research</p>
+            
+            <div class="evidence-timeline">
+                <div class="evidence-item scroll-reveal">
+                    <div class="evidence-year">2010</div>
+                    <div class="evidence-content">
+                        <h4>Foundation Study</h4>
+                        <p>Kennedy et al. demonstrate that reef soundscapes attract larval fish during settlement, linking acoustics to recruitment success.</p>
+                    </div>
+                </div>
+
+                <div class="evidence-item scroll-reveal">
+                    <div class="evidence-year">2016</div>
+                    <div class="evidence-content">
+                        <h4>Biodiversity Correlation</h4>
+                        <p>Harris et al. show strong correlation between acoustic complexity indices and fish diversity across Caribbean reefs.</p>
+                    </div>
+                </div>
+
+                <div class="evidence-item scroll-reveal">
+                    <div class="evidence-year">2018</div>
+                    <div class="evidence-content">
+                        <h4>Degradation Detection</h4>
+                        <p>Simpson et al. prove that degraded reefs have measurably different soundscapes than healthy reefs, enabling acoustic diagnosis.</p>
+                    </div>
+                </div>
+
+                <div class="evidence-item scroll-reveal">
+                    <div class="evidence-year">2020</div>
+                    <div class="evidence-content">
+                        <h4>AI Classification</h4>
+                        <p>Mooney et al. use machine learning to classify reef health from audio with 85%+ accuracy, validating AI approaches.</p>
+                    </div>
+                </div>
+
+                <div class="evidence-item scroll-reveal">
+                    <div class="evidence-year">2024</div>
+                    <div class="evidence-content">
+                        <h4>Acoustic Reef Launch</h4>
+                        <p>Blue Guardians team develops SurfPerch-based model achieving 95% accuracy, democratizing acoustic monitoring globally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="rp-section rp-cta-section">
+        <div class="rp-cta-container">
+            <h2 class="rp-cta-title">Experience the Science</h2>
+            <p class="rp-cta-description">Upload a coral reef recording and see our AI analyze its acoustic signature in real-time.</p>
+            <a href="#streamlit-app-link" class="rp-cta-button">
+                <span class="rp-cta-icon">🎵</span>
+                <span>Launch Acoustic Reef Analyzer</span>
+                <span class="rp-cta-arrow">→</span>
+            </a>
+            <p class="rp-cta-note">Free to use • Results in 5 seconds • No expertise required</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="rp-footer">
+        <div class="rp-footer-container">
+            <div class="rp-footer-grid">
+                <div class="rp-footer-col">
+                    <h3 class="rp-footer-title">Acoustic Reef</h3>
+                    <p class="rp-footer-description">Blue Guardians Team<br>
+                    PCCOE Innovation & Grand Challenge<br>
+                    Pimpri Chinchwad, India</p>
+                </div>
+
+                <div class="rp-footer-col">
+                    <h4 class="rp-footer-heading">Useful Links</h4>
+                    <ul class="rp-footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="science.html">The Science</a></li>
+                        <li><a href="technology.html">The Technology</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#streamlit-app-link">Try the App</a></li>
+                    </ul>
+                </div>
+
+                <div class="rp-footer-col">
+                    <h4 class="rp-footer-heading">About Acoustic Reef</h4>
+                    <p class="rp-footer-text">Since 2024, Acoustic Reef has been providing AI-powered coral reef health assessment services.<br><br>
+                    Follow our journey to democratize ocean monitoring.</p>
+                </div>
+            </div>
+
+            <div class="rp-footer-bottom">
+                <p>© Copyright <strong>Acoustic Reef</strong> - All Rights Reserved - Made with ❤️ by the Blue Guardians team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
