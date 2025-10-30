@@ -90,14 +90,18 @@ body {
 }
 
 .logo-image {
-    height: 50px;
+    height: 60px;
     width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
 
 .logo-image:hover {
     transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .nav-menu {
@@ -2789,7 +2793,7 @@ body {
     }
 
     .logo-image {
-        height: 40px;
+        height: 50px;
     }
 
     .logo-text {
