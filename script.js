@@ -293,6 +293,172 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ==========================================
+    // 14. SOUND CAROUSEL
+    // ==========================================
+    const carousel = document.getElementById('soundCarousel');
+    const prevBtn = document.getElementById('carouselPrev');
+    const nextBtn = document.getElementById('carouselNext');
+    const indicatorsContainer = document.getElementById('carouselIndicators');
+    
+    if (carousel && prevBtn && nextBtn) {
+        const cards = carousel.querySelectorAll('.rp-sound-card');
+        const totalCards = cards.length;
+        let currentIndex = 0;
+        let cardsPerView = 3; // Default for desktop
+
+        // Function to calculate cards per view based on screen width
+        function updateCardsPerView() {
+            const width = window.innerWidth;
+            if (width <= 768) {
+                cardsPerView = 1; // Mobile
+            } else if (width <= 1024) {
+                cardsPerView = 2; // Tablet
+            } else {
+                cardsPerView = 3; // Desktop
+            }
+        }
+
+        // Calculate total pages
+        function getTotalPages() {
+            return Math.ceil(totalCards / cardsPerView);
+        }
+
+        // Create indicator dots
+        function createIndicators() {
+            indicatorsContainer.innerHTML = '';
+            const totalPages = getTotalPages();
+            
+            for (let i = 0; i < totalPages; i++) {
+                const indicator = document.createElement('button');
+                indicator.classList.add('carousel-indicator');
+                indicator.setAttribute('aria-label', `Go to slide ${i + 1}`);
+                if (i === 0) indicator.classList.add('active');
+                
+                indicator.addEventListener('click', () => {
+                    goToSlide(i);
+                });
+                
+                indicatorsContainer.appendChild(indicator);
+            }
+        }
+
+        // Update carousel position
+        function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth;
+            const gap = 32; // 2rem gap
+            const offset = -(currentIndex * cardsPerView * (cardWidth + gap));
+            carousel.style.transform = `translateX(${offset}px)`;
+
+            // Update buttons state
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= getTotalPages() - 1;
+
+            // Update indicators
+            const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        // Go to specific slide
+        function goToSlide(index) {
+            currentIndex = Math.max(0, Math.min(index, getTotalPages() - 1));
+            updateCarousel();
+            pauseAllAudio();
+        }
+
+        // Next slide
+        function nextSlide() {
+            if (currentIndex < getTotalPages() - 1) {
+                currentIndex++;
+                updateCarousel();
+                pauseAllAudio();
+            }
+        }
+
+        // Previous slide
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCarousel();
+                pauseAllAudio();
+            }
+        }
+
+        // Pause all audio players
+        function pauseAllAudio() {
+            const audioPlayers = carousel.querySelectorAll('audio');
+            audioPlayers.forEach(audio => {
+                audio.pause();
+            });
+        }
+
+        // Event listeners
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+
+        // Auto-pause other audio when one starts playing
+        const audioPlayers = carousel.querySelectorAll('audio');
+        audioPlayers.forEach(audio => {
+            audio.addEventListener('play', function() {
+                audioPlayers.forEach(otherAudio => {
+                    if (otherAudio !== audio) {
+                        otherAudio.pause();
+                    }
+                });
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (e.key === 'ArrowRight') {
+                nextSlide();
+            }
+        });
+
+        // Touch/swipe support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                nextSlide(); // Swipe left
+            }
+            if (touchEndX > touchStartX + 50) {
+                prevSlide(); // Swipe right
+            }
+        }
+
+        // Initialize carousel
+        updateCardsPerView();
+        createIndicators();
+        updateCarousel();
+
+        // Update on window resize
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                updateCardsPerView();
+                currentIndex = 0; // Reset to first slide on resize
+                createIndicators();
+                updateCarousel();
+            }, 250);
+        });
+    }
+
+    // ==========================================
     // CONSOLE MESSAGE
     // ==========================================
     console.log('🌊 Acoustic Reef - Reef Pulse Design Loaded');

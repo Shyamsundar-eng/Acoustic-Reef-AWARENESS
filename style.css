@@ -79,11 +79,25 @@ body {
 }
 
 .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     font-family: var(--serif-font);
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--dark-text);
     letter-spacing: 0.02em;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu {
@@ -2774,6 +2788,14 @@ body {
         padding: 1.2rem 2rem;
     }
 
+    .logo-image {
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -4393,6 +4415,16 @@ body {
     color: #0EA5E9;
 }
 
+.diver-icon {
+    background: rgba(249, 115, 22, 0.1);
+    color: #F97316;
+}
+
+.whale-icon {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366F1;
+}
+
 .rp-sound-title {
     font-size: 1.3rem;
     font-weight: 700;
@@ -4424,6 +4456,94 @@ body {
     color: var(--muted-text);
     margin-top: 3rem;
     font-style: italic;
+}
+
+/* Sound Carousel Styles */
+.sound-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.sound-carousel-container {
+    flex: 1;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.sound-carousel-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.sound-carousel-track .rp-sound-card {
+    flex: 0 0 calc(33.333% - 1.4rem);
+    min-width: 280px;
+}
+
+.carousel-btn {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #E5E7EB;
+    color: var(--primary-blue);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+    transform: scale(1.1);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: #F3F4F6;
+}
+
+.carousel-btn:disabled:hover {
+    background: #F3F4F6;
+    color: var(--muted-text);
+    transform: scale(1);
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #E5E7EB;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background: var(--primary-blue);
+    width: 30px;
+    border-radius: 5px;
+}
+
+.carousel-indicator:hover {
+    background: var(--accent-cyan);
 }
 
 /* Steps Container (How It Works) */
@@ -4735,6 +4855,17 @@ body {
     .rp-achievements-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Carousel Responsive - Tablet */
+    .sound-carousel-track .rp-sound-card {
+        flex: 0 0 calc(50% - 1rem);
+        min-width: 240px;
+    }
+
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -4764,6 +4895,21 @@ body {
     .rp-footer-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    /* Carousel Responsive - Mobile */
+    .sound-carousel-track .rp-sound-card {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sound-carousel-wrapper {
+        gap: 0.5rem;
     }
 }
 
