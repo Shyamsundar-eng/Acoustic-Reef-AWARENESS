@@ -187,7 +187,7 @@ This website aims to:
 
 ## 👥 **Team - Blue Guardians**
 
-Developed by the **Blue Guardians** team at **Pimpri Chinchwad College of Engineering (PCCOE)** for the **Innovation & Grand Challenge 2024** competition.
+Developed by the **Blue Guardians** team, a group of passionate developers and marine conservation advocates dedicated to democratizing ocean monitoring technology.
 
 ### **Our Mission**
 Democratize coral reef monitoring by making AI-powered acoustic analysis instant, free, and accessible to anyone with an internet connection—from coastal communities to conservation organizations to citizen scientists worldwide.
@@ -302,7 +302,7 @@ A global network of acoustic sensors and citizen scientists continuously monitor
 
 ## 📄 **License**
 
-This project is developed for educational and conservation purposes as part of the **PCCOE Innovation & Grand Challenge 2024**.
+This project is developed for educational and conservation purposes.
 
 **Educational Use**: Free to use, modify, and share for non-commercial educational and conservation purposes.
 
@@ -314,7 +314,6 @@ This project is developed for educational and conservation purposes as part of t
 
 ## 🙏 **Acknowledgments**
 
-- **Pimpri Chinchwad College of Engineering (PCCOE)** - For hosting the Innovation & Grand Challenge competition and supporting student innovation
 - **Google Research** - For developing and open-sourcing the SurfPerch marine bioacoustics model
 - **Marine Bioacoustics Research Community** - For advancing the science of underwater acoustic monitoring
 - **Open Source Community** - For the tools and libraries that made this project possible
@@ -340,8 +339,6 @@ By making reef health assessment instant, free, and accessible to everyone, we c
 **Made with ❤️ by the Blue Guardians Team**
 
 *Democratizing ocean monitoring, one soundscape at a time*
-
-**PCCOE Innovation & Grand Challenge 2024**
 
 [View Website](index.html) • [The Science](science.html) • [Get Involved](about.html)
 
