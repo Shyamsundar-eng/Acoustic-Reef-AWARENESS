@@ -9,6 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // 1. SMOOTH SCROLLING FOR NAV LINKS
     // ==========================================
     const navLinks = document.querySelectorAll('.nav-link');
+    const currentPath = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+
+    // Set active link based on current URL
+    navLinks.forEach(link => {
+        const href = (link.getAttribute('href') || '').toLowerCase();
+        if (href && !href.startsWith('#') && href === currentPath) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+    });
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -34,16 +44,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // 2. NAVBAR BACKGROUND CHANGE ON SCROLL
     // ==========================================
     const navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', function() {
+    const handleScroll = () => {
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.background = 'white';
-            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+            navbar.classList.remove('scrolled');
         }
-    });
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
 
     // ==========================================
     // 3. HAMBURGER MENU TOGGLE
@@ -53,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (hamburger) {
         hamburger.addEventListener('click', function() {
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', String(!expanded));
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
@@ -61,7 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close menu when clicking nav link
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
+            if (hamburger) {
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
             navMenu.classList.remove('active');
         });
     });

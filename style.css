@@ -31,6 +31,35 @@
     box-sizing: border-box;
 }
 
+/* Better focus visibility */
+:focus-visible {
+    outline: 3px solid var(--accent-blue);
+    outline-offset: 3px;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    background: #fff;
+    color: var(--dark-text);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1100;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -138,6 +167,11 @@ body {
 
 .nav-link.active::after {
     width: 100%;
+}
+
+/* Mobile nav open state */
+.nav-menu.active {
+    display: flex;
 }
 
 .hamburger {
